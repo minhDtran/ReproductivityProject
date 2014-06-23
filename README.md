@@ -3,7 +3,7 @@ ReproductivityProject
 
 Reproductivity Project : compare the MGP between an automatic and manual transmission
 
-Code of my server.R
+Code of my server.R for my Shiny app at https://dungminhtran.shinyapps.io/Minh/
 
 library(shiny)
 library(datasets)
