@@ -9,10 +9,10 @@ library(shiny)
 library(datasets)
 library(ggplot2) # load ggplot
  
-# Define server logic required to plot various variables against mpg
+### Define server logic required to plot various variables against mpg
 shinyServer(function(input, output) {
-# Compute the forumla text in a reactive function since it is
-# shared by the output$caption and output$mpgPlot functions
+### Compute the forumla text in a reactive function since it is
+### shared by the output$caption and output$mpgPlot functions
 formulaText <- reactive(function() {
 paste("mpg ~", input$variable)
 })
