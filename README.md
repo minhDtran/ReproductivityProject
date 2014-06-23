@@ -20,17 +20,17 @@ paste("mpg ~", input$variable)
 output$caption <- reactiveText(function() {
 formulaText()
 })
-# Generate a plot of the requested variable against mpg and only
-# include outliers if requested
-# ggplot version
+### Generate a plot of the requested variable against mpg and only
+### include outliers if requested
+### ggplot version
 output$mpgPlot <- reactivePlot(function() {
-# check for the input variable
+### check for the input variable
 if (input$variable == "am") {
-# am
+### am
 mpgData <- data.frame(mpg = mtcars$mpg, var = factor(mtcars[[input$variable]], labels = c("Automatic", "Manual")))
 }
 else {
-# cyl and gear
+### cyl and gear
 mpgData <- data.frame(mpg = mtcars$mpg, var = factor(mtcars[[input$variable]]))
 }
  
