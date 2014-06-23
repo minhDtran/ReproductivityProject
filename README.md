@@ -3,6 +3,12 @@ ReproductivityProject
 
 Productivity Project : compare the MGP between an automatic and manual transmission
 
+This readme file contains the server.R and ui.R codes for generating my shiny web page.
+
+This readme file also introduces to the idea of computing MPG based on the automatic and manual automobile model.
+
+The code for computing it are located in the R mark down and the HTML files.
+
 Code of my server.R for my Shiny app at https://dungminhtran.shinyapps.io/Minh/
 
 library(shiny)
